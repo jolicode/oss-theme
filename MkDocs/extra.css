@@ -83,3 +83,8 @@
 [data-md-color-scheme=default] .hljs {
     background-color: var(--md-default-fg-color--lightest);
 }
+
+/* Hide the existing social footer, ours is better */
+.md-footer-meta.md-typeset {
+    display: none;
+}
