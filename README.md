@@ -11,3 +11,12 @@ Two variables should be replaced:
   </a>
   ```
   Links must have the `class="jf-link"` attribute.
+
+# MkDocs theme
+
+Add the file [extra.css](MkDocs/extra.css) to the `mkdocs.yml` configuration:
+
+```yaml
+extra_css:
+    - assets/stylesheets/extra.css
+```
