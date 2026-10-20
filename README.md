@@ -28,3 +28,14 @@ Add the file [extra.css](MkDocs/extra.css) to the `mkdocs.yml` configuration:
 extra_css:
     - assets/stylesheets/extra.css
 ```
+
+# Zensical theme
+
+Add the file [extra.css](Zensical/extra.css) to the `mkdocs.yml` (or `zensical.toml`) configuration:
+
+```yaml
+extra_css:
+    - assets/stylesheets/extra.css
+```
+
+Works with both the `classic` and `modern` theme variants.
