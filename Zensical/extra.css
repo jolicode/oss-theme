@@ -36,22 +36,15 @@
         grid-template-rows: minmax(0, 0fr);
     }
 
-    .md-nav__item .md-nav__link--active {
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 0.2rem;
-            height: 0.8rem;
-            background-color: var(--md-typeset-a-color);
-        }
+    /* With navigation.tabs, the active top-level page is hidden from the sidebar: show it as the heading of its integrated table of contents */
+    .md-nav--lifted > .md-nav__list > .md-nav__item--active > a.md-nav__link {
+        display: flex;
     }
 
-    .md-nav__item--active > .md-nav__link--active,
-    .md-nav__item--active > .md-nav__container > .md-nav__link--active {
-        &::before {
-            content: none;
-        }
+    /* The modern variant already colors the active entry, and its padding leaves the line far from the text */
+    .md-nav--integrated > .md-nav__list > .md-nav__item--active .md-nav--secondary {
+        margin-left: 0.6rem;
+        border-left: 0;
     }
 }
 
