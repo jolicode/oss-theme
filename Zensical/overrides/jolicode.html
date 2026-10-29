@@ -1,0 +1,22 @@
+{#
+  Base template of the JoliCode documentations, installed by the Castor task doc:assets.
+  Extend it from main.html: {% extends "jolicode.html" %}
+#}
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  {% if not page.url and page.meta and page.meta.title %}
+    <title>{{ page.meta.title }}</title>
+  {% elif not page.url %}
+    <title>{{ config.site_name }}</title>
+  {% elif page.meta and page.meta.title %}
+    <title>{{ page.meta.title }} - {{ config.extra.short_name | d(config.site_name) }}</title>
+  {% else %}
+    <title>{{ page.title | striptags }} - {{ config.extra.short_name | d(config.site_name) }}</title>
+  {% endif %}
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  {% include "jolicode-footer.html" %}
+{% endblock %}
