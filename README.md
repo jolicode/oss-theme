@@ -2,7 +2,10 @@
 
 Two variables should be replaced:
 
-- `#GITHUB_REPO`: `jolicode/castor`
+- `#GITHUB_REPO`: `jolicode/castor` — used for the GitHub link and as the
+  `utm_source` of the links to jolicode.com, so traffic can be attributed to
+  each project in our analytics. The `sed` command below replaces all
+  occurrences.
 - `<!-- #SUBTITLE -->`: Any sentence. Can include links.
   ```html
   Castor is licensed under
