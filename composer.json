@@ -1,0 +1,14 @@
+{
+    "name": "jolicode/oss-theme",
+    "description": "JoliCode theme and Castor tasks for the documentation of the open source projects",
+    "type": "castor-plugin",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}
